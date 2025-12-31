@@ -10,12 +10,10 @@ public class LoginPage {
     
     @FindBy(xpath = "//input[@id='password']")
     WebElement password;
-    
   
     @FindBy(xpath = "//button[@type='submit']")
     WebElement login;
     
-
     public void enterUsername(String user) {
         username.sendKeys(user);
     }
